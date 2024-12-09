@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <button onclick="listAvailableBooks()">Borrow Book</button>
+        <button onclick="myBorrowedBooks()">My Books</button>
+        <button onclick="returnBook()">Return Book</button>
+        <div id="available-books" style="display: none;">
+            <h2>Available Books</h2>
+            <div id="available-books-list"></div>
+        </div>
+        <div id="my-books" style="display: none;">
+            <h2>My Books</h2>
+            <div id="my-books-list"></div>
+        </div>
+        <div id="return-book" style="display: none;">
+            <h2>Return Book</h2>
+            <div id="return-book-list"></div>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

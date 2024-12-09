@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <button onclick="showAddBook()">Add Book</button>
+        <button onclick="viewBorrowedBooks()">View Borrowed Books</button>
+        <div id="add-book" style="display: none;">
+            <h2>Add Book</h2>
+            <form id="add-book-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn">
+                <button type="button" onclick="addBook()">Submit</button>
+            </form>
+        </div>
+        <div id="borrowed-books" style="display: none;">
+            <h2>Borrowed Books</h2>
+            <div id="borrowed-books-list"></div>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
